@@ -1,5 +1,5 @@
-from math import sqrt, pow
+from math import hypot
 catOp = float(input("Digite o comprimento do cateto oposto: "))
 catAd = float(input("Digite o comprimento do cateto adjacente: "))
-hipotenusa = sqrt(pow(catOp,2) + pow(catAd,2)) 
+hipotenusa = hypot(catOp, catAd)
 print("O comprimento da hipotenusa será de: {}".format(hipotenusa))
