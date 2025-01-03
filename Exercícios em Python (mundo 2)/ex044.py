@@ -7,7 +7,7 @@ if pagamento == 1:
     print(f'\nO valor da compra será de \033[32mR${desconto:.2f}\033[m.')
 elif pagamento == 2:
     print('1 - À vista \n2 - Parcelado \033[m')
-    escolha = int(input('Escolha a forma de passar o cartão: '))
+    escolha = int(input('Escolha a forma de pagamento: '))
     if escolha == 1:
         desconto = produto - (produto * 5/100)
         print(f'\nO valor da compra será de \033[32mR${desconto:.2f}\033[m.')
