@@ -11,9 +11,10 @@ while c < l:
     quantidade += 1
     if c == 0:
         maior = numeros
+        menor = numeros
     if numeros > maior:
         maior = numeros
-    if numeros < maior:
+    if numeros < menor:
         menor = numeros
     continuar = input('Quer continuar? [S ou N]: ').upper()
     if continuar == 'S':
