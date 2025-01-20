@@ -1,6 +1,6 @@
-s = input('Informe seu sexo [M ou F]: ').upper()
-while s != 'M' and s != 'F':
+sexo = input('Informe seu sexo [M ou F]: ').strip().upper()[0]
+while sexo not in 'MF':
     print('Resposta inválida!')
-    s = input('Informe seu sexo [M ou F]: ').upper()
-print('Resposta válida!')
+    sexo = input('Informe seu sexo [M ou F]: ').strip().upper()[0]
+print(f'Sexo {sexo} cadstrado com sucesso.')
 print('Obrigado pela a atenção.')

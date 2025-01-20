@@ -1,15 +1,13 @@
 soma = 0
 maior = 0
 menor = 0
-quantidade = 0
-l = 1
-c = 0
-while c < l:
+cont = 0
+continuar = "S"
+while continuar == "S":
     print('-='*12)
     numeros = int(input('Digite um valor: '))
     soma += numeros
-    quantidade += 1
-    if c == 0:
+    if cont == 0:
         maior = numeros
         menor = numeros
     if numeros > maior:
@@ -17,14 +15,10 @@ while c < l:
     if numeros < menor:
         menor = numeros
     continuar = input('Quer continuar? [S ou N]: ').upper()
-    if continuar == 'S':
-        l += 1
-        c += 1
-    elif continuar == 'N':
-        c = l
-    else:
-        print('Escolha inválida!')
-media = soma / quantidade
+    if continuar == "S":
+        cont += 1
+    
+media = soma / cont
 print('=-'*20)
 print(f'A média entre os valores fornecidos é {media}')
 print(f'O maior valor digitado foi {maior}')

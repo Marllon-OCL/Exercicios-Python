@@ -14,17 +14,17 @@ while c < 1:
     escolha = int(input('escolha: '))
     if escolha == 1:
         soma = a + b
-        print(f'A soma dos valores é {soma}')
-    if escolha == 2:
+        print(f'A soma entre {a} + {b} = {soma}')
+    elif escolha == 2:
         mult = a * b
-        print(f'A multiplicação entre os valores é {mult}')  
-    if escolha == 3:
+        print(f'A multiplicação entre {a} x {b} = {mult}')  
+    elif escolha == 3:
         maior = max([a, b])
         print(f'O maior entre os valores é {maior}')
-    if escolha == 4:
+    elif escolha == 4:
         a = int(input('Novo valor: '))
         b = int(input('Novo valor: '))
-    if escolha == 5:
+    elif escolha == 5:
         print('Desligando o Sistema...')
         sleep(3)
         c = 1
