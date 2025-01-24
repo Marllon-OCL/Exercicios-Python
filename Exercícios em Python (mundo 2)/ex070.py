@@ -22,7 +22,6 @@ while True:
         break
     continuar = input("Quer continuar? [S/N] ").strip().upper()[0]
     while continuar not in "SN":
-        print("Resposta inválida! Informe S ou N.")
         continuar = input("Quer continuar? [S/N] ").strip().upper()[0]
     if continuar == "N":
         break
