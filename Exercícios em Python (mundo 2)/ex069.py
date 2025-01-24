@@ -3,17 +3,11 @@ print(21*"-")
 print(" CADASTRO DE PESSOAS ")
 while True:
     print(21*"-")
-    while True:
-        idade = input("Informe sua idade: ")
-        if not idade.isdigit():
-            print("Resposta inválida.")
-        else:
-            idade = int(idade)
-            if idade > 0:
-                if idade > 18:
-                    mais18 += 1
-                break
-    while True:
+    idade = int(input("Informe sua idade: "))
+    if idade > 18:
+        mais18 += 1
+    sexo = ' '
+    while sexo not in "MF":
         sexo = input("Informe seu sexo [F/M] ").strip().upper()[0]
         if sexo == "F":
             if idade < 20:
