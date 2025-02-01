@@ -2,22 +2,24 @@ print(29*"=")
 print("          BANCO OCL          ")
 print(29*"=")
 valor = int(input("Que valor você quer sacar? R$"))
-cinquenta = valor // 50
-resto = valor % 50
-vinte = resto // 20
-resto = resto % 20
-dez = resto // 10
-resto = resto % 10
-um = resto // 1
+total = valor
+céd = 50
+totcéd = 0
 while True:
-    if cinquenta > 0:
-        print(f"Total de {cinquenta} cédulas de R$50.00")
-    if vinte > 0:
-        print(f"Total de {vinte} cédulas de R$20.00")
-    if dez > 0:
-        print(f"Total de {dez} cédulas de R$10.00")
-    if um > 0:
-        print(f"Total de {um} moedas de R$1.00")    
-    break
+    if total >= céd:
+        total -= céd
+        totcéd += 1
+    else:
+        if totcéd > 0:
+            print(f"Total de {totcéd} cédulas de R${céd}.00")
+        if céd == 50:
+            céd = 20
+        elif céd == 20:
+            céd = 10
+        elif céd == 10:
+            céd = 1
+        totcéd = 0
+        if total == 0:
+            break
 print(29*"=")
-print("Volte sempre ao BANCO OCL! Tenha um bom dia!")    
+print("Volte sempre ao BANCO OCL! Tenha um bom dia!")
