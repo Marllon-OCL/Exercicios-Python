@@ -1,4 +1,4 @@
-expressao = "(((a+b)*c)))"
+expressao = input("Digite uma expressão: ")
 pilha = []
 for c in expressao:
     if c == "(":
