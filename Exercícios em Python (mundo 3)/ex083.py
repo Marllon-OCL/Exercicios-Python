@@ -4,11 +4,11 @@ for c in expressao:
     if c == "(":
         pilha.append(c)
     elif c == ")":
-        if pilha.count("(") == 0:
-            pilha.append(c)
-        else:
+        if pilha:
             pilha.pop()
-if len(pilha) > 0:
+        else:
+            pilha.append(c)
+if pilha:
     print("Expressão inválida!")
 else:
     print("Expressão válida!")
