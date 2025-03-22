@@ -1,4 +1,4 @@
 Assuntos repassados no Mundo 3 do curso de Python 3.
 1. Variáveis Compostas:
     - Tuplas - São imutáveis, pode ser escrita com ou sem parênteses;
-    - Listas - 
+    - Listas - São mutáveis, usa-se colchetes na sua composição ou é usado o comando "list()"
